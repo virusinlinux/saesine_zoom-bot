@@ -57,6 +57,8 @@ def joinClass():
 
 resolution = (1920, 1080)
 codec = cv2.VideoWriter_fourcc(*"XVID")
+time_stamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
+filename = f'{time_stamp}.mp4'
 
 filename = "venv/Recording.avi"
 
