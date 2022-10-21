@@ -5,7 +5,9 @@ import numpy as np
 resolution = (1920, 1080)
 codec = cv2.VideoWriter_fourcc(*"XVID")
 
-filename = "venv/Recording.avi"
+# To save the recording in the local system
+time_stamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
+filename = f'{time_stamp}.mp4'
 
 # Specify frames rate. We can choose any
 # value and experiment with it
