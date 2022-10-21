@@ -57,10 +57,9 @@ def joinClass():
 
 resolution = (1920, 1080)
 codec = cv2.VideoWriter_fourcc(*"XVID")
+# Saving the file in the local system 
 time_stamp = datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
 filename = f'{time_stamp}.mp4'
-
-filename = "venv/Recording.avi"
 
 # Specify frames rate. We can choose any
 # value and experiment with it
